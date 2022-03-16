@@ -1,3 +1,6 @@
 .container .list {
   margin-top: 50px !important;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

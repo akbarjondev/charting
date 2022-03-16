@@ -1,0 +1,33 @@
+.tooltip {
+  width: 100px;
+  height: 150px;
+  background-color: #ded6d8;
+  position: relative;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.tooltip::before {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #ded6d8;
+}
+
+.tooltip--right::before {
+  transform: translateX(-50%);
+  left: 100%;
+}
+
+.tooltip--left::before {
+  transform: translateX(50%);
+  right: 100%;
+}

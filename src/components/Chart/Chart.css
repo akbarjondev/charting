@@ -1,0 +1,52 @@
+.chart {
+  width: 30%;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.chart__stat {
+  display: flex;
+  height: 100px;
+  align-items: flex-end;
+}
+
+.chart__items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 33%;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.posts {
+  background-color: #fa5252;
+}
+
+.albums {
+  background-color: #12b886;
+}
+
+.todos {
+  background-color: #7950f2;
+}
+
+.chart__label {
+  display: flex;
+}
+
+.chart__names {
+  width: 33%;
+  margin-bottom: 12px;
+  margin-top: 4px;
+  border: 1px solid #333333;
+  text-align: center;
+}
+
+.chart__names:nth-child(even) {
+  border-left-color: #ffffff;
+  border-right-color: #ffffff;
+}
