@@ -13,8 +13,8 @@ export const Basic = Template.bind({});
 Basic.args = {
   users: [
     {id: 1, name: 'Ali'},
-    {id: 1, name: 'Ali'},
-    {id: 1, name: 'Ali'},
-    {id: 1, name: 'Ali'},
+    {id: 2, name: 'Ali'},
+    {id: 3, name: 'Ali'},
+    {id: 4, name: 'Ali'},
   ]
 };

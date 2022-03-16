@@ -20,6 +20,7 @@
   width: 33%;
   color: #ffffff;
   cursor: pointer;
+  transition: height 0.3s ease;
 }
 
 .posts {
