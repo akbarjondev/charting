@@ -6,12 +6,12 @@
   border-radius: 4px;
   padding: 8px;
   font-size: 12px;
+  position: absolute;
 }
 
 .tooltip::before {
   position: absolute;
   bottom: 0;
-  z-index: -1;
   content: "";
   display: block;
   width: 0;

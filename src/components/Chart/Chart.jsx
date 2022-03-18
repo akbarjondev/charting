@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import API from './../../api/jsonplaceholder';
 import './Chart.css';
 
-const Chart = ({ user }) => {
+const Chart = ({ user, onHover }) => {
 
   const [posts, setPosts] = useState([]);
   const [albums, setAlbums] = useState([]);
@@ -33,6 +33,8 @@ const Chart = ({ user }) => {
   }
 
   function pointerHover(event) {
+    onHover(event)
+
     const item = event.target;
     const itemHeight = event.target.clientHeight;
 
@@ -54,18 +56,21 @@ const Chart = ({ user }) => {
           onMouseLeave={pointerLeave}
           className="posts chart__items" 
           style={{height: `${2 * posts.length}%`}}
+          data-key='posts'
         >{posts.length}</div>
         <div 
           onMouseEnter={pointerHover}
           onMouseLeave={pointerLeave}
           className="todos chart__items" 
           style={{height: `${2 * todos.length}%`}}
+          data-key='posts'
         >{todos.length}</div>
         <div 
           onMouseEnter={pointerHover}
           onMouseLeave={pointerLeave}
           className="albums chart__items" 
           style={{height: `${2 * albums.length}%`}}
+          data-key='posts'
         >{albums.length}</div>
       </div>
       <div className="chart__label">
